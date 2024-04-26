@@ -8,7 +8,7 @@ dirs = [
 ]
 
 for dir in dirs:
-    files = [os.path.join(dir, f) for f in os.listdir(dir)]
+    files = [os.path.join('data', dir, f) for f in os.listdir(dir)]
     for file in files:
         lines = open(file, 'r', encoding='utf-8').readlines()
         for i in range(len(lines)):
