@@ -1,10 +1,10 @@
 import os
 
 dirs = [
-    'bad_supp',
+    'stage1',
     'dev',
-    'good_supp',
-    'train'
+    'stage2',
+    'stage3'
 ]
 
 for dir in dirs:
