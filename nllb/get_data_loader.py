@@ -418,7 +418,7 @@ class DevSet(Dataset):
         assert self.tokenizer._src_lang == 'spa_Latn'
         assert self.tokenizer.tgt_lang == self.lang_token
         
-        file_path = path.join('proj_data_final', 'dev', lang_code+'.tsv')
+        file_path = path.join('data', 'dev', lang_code+'.tsv')
         lines = open(file_path, 'r', encoding='utf-8').readlines()
         
         es_batch = []
@@ -560,7 +560,7 @@ class TestSet(Dataset):
         assert self.tokenizer._src_lang == 'spa_Latn'
         assert self.tokenizer.tgt_lang == self.lang_token
         
-        file_path = path.join('proj_data_final', 'test', lang_code+'.txt')
+        file_path = path.join('data', 'test', lang_code+'.txt')
         lines = open(file_path, 'r', encoding='utf-8').readlines()
         
         es_batch = []
@@ -656,7 +656,7 @@ def get_data_loader(
     """
     
     if split not in ('dev', 'test'):
-        split_loc = path.join('proj_data_final', split)
+        split_loc = path.join('data', split)
         files = [path.join(split_loc, f) for f in listdir(split_loc) if f.endswith('.tsv')]
         if lang_code is not None:
             files = [f for f in files if lang_code in f]
