@@ -1,0 +1,13 @@
+__pycache__/
+proj_data_final/
+*.pyc
+outputs/plots/
+outputs/submission/
+outputs/translations/
+outputs/translations_test/
+evaluate.py
+vocab/vocab.txt
+desktop.ini
+jb_mamba.sh
+*.o
+*.sh
