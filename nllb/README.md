@@ -45,6 +45,3 @@ The repository expects the [shared task evaluation script](https://github.com/Am
 
 Reports can then be analyzed on a per-language basis as needed using `reports.py`, which will print some useful information garnered from the reports.
 
-## Acknowledgements
-
-We would like to thank Dr. Kenton Murray of Johns Hopkins University for his guidance and support throughout the project. We would also like to thank the AmericasNLP 2024 Shared Task 1 organizers for providing the data and evaluation script.
