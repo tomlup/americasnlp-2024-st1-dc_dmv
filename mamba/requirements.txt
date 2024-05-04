@@ -1,0 +1,4 @@
+mamba-ssm==1.2.0.post1
+torch==2.2.2+cu118
+sentencepiece==0.2.0
+matplotlib==3.8.4
