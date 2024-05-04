@@ -239,9 +239,9 @@ def main():
     langs = ['aym', 'bzd', 'cni', 'ctp', 'gn', 'hch', 'nah', 'oto', 'quy', 'shp', 'tar']
     files = []
     for lang in langs:
-        files.append(os.path.join('data', 'train', lang + '.tsv'))
-        files.append(os.path.join('data', 'extra', lang + '.tsv'))
-        files.append(os.path.join('data', 'synthetic', lang + '.tsv'))
+        files.append(os.path.join('data', 'stage3', lang + '.tsv'))
+        files.append(os.path.join('data', 'stage2', lang + '.tsv'))
+        files.append(os.path.join('data', 'stage1', lang + '.tsv'))
 
     epochs = 5
     output_str = 'mamba_256_3_16000_stages_1_2_3'
