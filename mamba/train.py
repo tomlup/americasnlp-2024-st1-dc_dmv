@@ -180,7 +180,7 @@ def train(
             'model_state_dict': model.state_dict(),
             'optimizer_state_dict': optimizer.state_dict()
         }
-        ckpts_dir = 'ckpts256_3_16'
+        ckpts_dir = 'ckpts'
         if not os.path.exists(ckpts_dir):
             os.mkdir(ckpts_dir)
         save(
