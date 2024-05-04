@@ -30,18 +30,10 @@ def main():
     device = 'cuda' if is_available() else 'cpu'
     manual_seed(42)
 
-    overfit = False
-    num_workers = 1
-    batch_size = 1
-
     print('\nLoading model...')
     free()
     config = MambaConfig(d_model=256, n_layer=3, vocab_size=sp.vocab_size())
     model = MambaLMHeadModel(config, device='cuda').to(device)
-    # print('Loading from checkpoint...')
-    #
-    # model.load_state_dict(checkpoint['model_state_dict'])
-    # print(f'Model {ckpt_string} loaded.')
     free()
     print('Model loaded.\n')
 
@@ -58,8 +50,6 @@ def main():
     if not os.path.exists(tr_dir):
         os.mkdir(tr_dir)
 
-    # ckpts = os.listdir(os.path.join('ckpts256_3_16'))
-    # ckpts = os.listdir(os.path.join('ckpts512_3_16'))
     ckpts = [
         'checkpoint25_mamba_256_3_16000_ALL.pth'
     ]
