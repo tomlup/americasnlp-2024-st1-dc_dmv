@@ -45,3 +45,6 @@ The repository expects the [shared task evaluation script](https://github.com/Am
 
 Reports can then be analyzed on a per-language basis as needed using `reports.py`, which will print some useful information garnered from the reports.
 
+## Submission models
+
+We make the saved checkpoints for our 6 fine-tuned NLLB-200 submissions available [here](https://huggingface.co/ddegenaro/nllb-finetune/tree/main).

@@ -30,3 +30,7 @@ Decoding the dev set and test set can be done using `decode_dev.py` and  `decode
 ## Evaluating outputs
 
 Evaluation on the decoded dev output can be done using the [shared task evaluation script](https://github.com/AmericasNLP/americasnlp2024/blob/master/ST1_MachineTranslation/evaluate.py), `evaluate.py`, provided by task organizers.
+
+## Submission checkpoint
+
+The checkpoint file representing our Mamba model submission is located in the `ckpts` directory.
