@@ -81,7 +81,7 @@ def main():
 
         print(f'Loading checkpoint {ckpt}...')
         free()
-        file_path = os.path.join('ckpts256_3_16', ckpt)
+        file_path = os.path.join('ckpts', ckpt)
         try:
             checkpoint = load(file_path)
         except Exception as e:
